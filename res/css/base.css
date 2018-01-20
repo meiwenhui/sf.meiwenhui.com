@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+/*
+@font-face {
+  font-family: fz; src: url("http://libs.niuyanben.com/fonts/fz/FZLTXHJW.TTF")
+}
+*{font-family: fz;}
+*/
+a {
+	color: #333;
+}
+
+.title {
+	border-bottom: 2px solid #ddd;
+	padding: 10px 20px;
+}
+
+.row {
+	padding: 10px 30px;
+	
+}
+
+p {
+	text-indent: 2em;
+	padding: 5px;
+	color: #666;
+	line-height: 1.6;
+	font-size: 1.3em;
+}
+
+.footer {
+	margin-top:50px;
+	font-size: 12px;
+	text-align: right;
+	width: 100%
+}

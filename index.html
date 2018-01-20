@@ -1,0 +1,143 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang=zh-CN>
+<head>
+	<meta charset=utf-8>
+	<meta http-equiv=X-UA-Compatible content="IE=edge">
+	<meta name=viewport content="width=device-width,initial-scale=1">
+<title>书法字典</title>
+
+<style>
+/* Template produced (html css) by  aleps, ICQ – 580444803/531124 | E-mail: aleps[.]rp@gmail.com */
+/* thank you all =\ */
+
+@import url(http://fonts.googleapis.com/css?family=Istok+Web&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+*{	margin: 0 auto;	padding: 0 auto; outline: 0;}
+html{
+	background:#fff url("res/images/bg.png");
+}
+body{
+   color: #555;
+   font: 11px/1.42 Tahoma, Arial, Helvetica, sans-serif;
+   cursor: default
+}
+.ctr{clear: both;}
+
+a{ color:#555555; text-decoration:none;}
+a:hover{ color:#424242; text-decoration: underline;}
+/* Íîâûé áëîê êîíñòðóèðîâàíèÿ ---------------------------- */
+
+
+.wrapper{
+	background: url("img/grow.png");
+	margin: 0 auto;
+	margin-top:20px;
+	padding-top:2px;
+}
+
+
+
+.Textinfo{
+	text-align:center;
+	font-family: 'Istok Web', sans-serif;
+	width:510px;
+	margin-bottom:30px;
+}
+.n1{
+	color:#3b3b3b;
+	font-size:26px;
+}
+.n2{
+	color:#9c9c9c;
+	font-size:17px;
+}
+.email{
+}
+.barse{
+	background: url("res/images/search_box.png");
+	width: 538px;
+	margin-bottom: 30px;
+}
+
+input.k{
+	width: 490px;
+	height: 55px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	padding: 0 10px;
+	margin: 13px ;
+	color:#707070;
+	font-family: 'Istok Web', sans-serif;
+	font-size:18px;
+}
+
+.search-results{
+	    width: 80%;
+}
+
+@font-face {
+  font-family: cf; src: url("http://7xk8te.com1.z0.glb.clouddn.com/fonts/a.ttf")
+}
+
+@font-face {
+  font-family: af; src: url("http://7xk8te.com1.z0.glb.clouddn.com/fonts/b.ttf")
+}
+
+@font-face {
+  font-family: bf; src: url("http://7xk8te.com1.z0.glb.clouddn.com/fonts/c.ttf")
+}
+@font-face {
+  font-family: df; src: url("http://7xk8te.com1.z0.glb.clouddn.com/d.ttf")
+}
+.word {
+  font-size: 4rem;font-family: df;
+}
+
+.word.a {
+  font-family: af;
+}
+
+.word.b {
+  font-family: bf;
+}
+
+.word.c {
+  font-family: cf;
+}
+</style>
+</head>
+
+<body>
+
+<div id="wrapper" class="wrapper">
+
+<div class="Textinfo">
+<div class="n1">Newsletter <b>Sign Up</b></div>
+<div class="n2">Want to keep up to date with all our latest news and information?
+Enter your email below to be added to our mailing list.</div>
+
+</div>
+
+<div class="barse">
+	<input  name="k" v-model="k" class="k" type="text" />
+</div>
+<div class="search-results">
+        <div class="word a">{{k}}</div>
+        <div class="word b">{{k}}</div>
+        <div class="word c">{{k}}</div>
+    </div>
+
+
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+<script type="text/javascript">
+			new Vue({
+				el : '#wrapper',
+				data: {
+				    k: '故书也者，心学也；写字者，写志也'
+				  }
+			})
+		</script>
+</body>
+</html>
